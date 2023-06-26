@@ -1,0 +1,63 @@
+<section class="h-fit w-11/12 mx-auto px-6">
+  <h1 class="tracking-normal font-semibold text-6xl pb-8 pt-20">Welcome Back!</h1>
+  <h2 class="tracking-normal text-3xl pb-4">${user_logged}</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="bg-orange-200 rounded-2xl p-6">
+      <span class="text-black text-lg">${view_count}</span>
+      <p class="text-black text-sm mt-2">Website Visits</p>
+    </div>
+    <div class="bg-green-200 rounded-2xl p-6">
+      <span class="text-black text-lg">$ ${total_sales / 100}</span>
+      <p class="text-black text-sm mt-2">Sales</p>
+    </div>
+    <div class="bg-blue-200 rounded-2xl p-6">
+      <span class="text-black text-lg">${number_of_orders}</span>
+      <p class="text-black text-sm mt-2">Orders Submitted</p>
+    </div>
+  </div>
+  <article class="flex flex-col md:flex-row w-full mx-auto my-8">
+    <div class="flex-1 rounded-2xl border-stone-200 border-solid border-2 mb-4 md:mb-0 md:mr-4">
+      <canvas class="w-full" id="week-sales"></canvas>
+    </div>
+    <div class="md:w-1/5 rounded-2xl border-stone-200 border-solid border-2 p-6 flex flex-col">
+      <h2 class="text-lg tracking-normal font-semibold mb-4">Top 5 Recent Sales</h2>
+      <ul class="flex flex-col gap-2">
+        <li class="mb-2 flex justify-between items-center gap-1">
+          <div class="flex flex-col">
+            <span class="text-black font-semibold">Carolina</span>
+            <span class="text-black">11/22/2023</span>
+          </div>
+          <span>$200</span>
+        </li>
+        <li class="mb-2 flex justify-between items-center gap-1">
+          <div class="flex flex-col">
+            <span class="text-black font-semibold">Carolina</span>
+            <span class="text-black">11/22/2023</span>
+          </div>
+          <span>$200</span>
+        </li>
+        <li class="mb-2 flex justify-between items-center gap-1">
+          <div class="flex flex-col">
+            <span class="text-black font-semibold">Carolina</span>
+            <span class="text-black">11/22/2023</span>
+          </div>
+          <span>$200</span>
+        </li>
+        <li class="mb-2 flex justify-between items-center gap-1">
+          <div class="flex flex-col">
+            <span class="text-black font-semibold">Carolina</span>
+            <span class="text-black">11/22/2023</span>
+          </div>
+          <span>$200</span>
+        </li>
+        <li class="mb-2 flex justify-between items-center gap-1">
+          <div class="flex flex-col">
+            <span class="text-black font-semibold">Carolina</span>
+            <span class="text-black">11/22/2023</span>
+          </div>
+          <span>$200</span>
+        </li>
+      </ul>
+    </div>
+  </article>  
+</section>

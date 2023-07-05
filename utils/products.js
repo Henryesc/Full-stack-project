@@ -10,7 +10,7 @@ const cn = {
     allowExitOnIdle: process.env.DB_ALLOWEXITONIDLE 
 };
 
-const db = pgp(cn);
+const db = pgp(process.env.URL);
 
 async function getProducts() {
     const products = await db.any('SELECT * FROM stock', [true]);

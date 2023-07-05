@@ -8,7 +8,7 @@
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "production": "psql -U postgres -f /sql/products/products.sql && node server.js"
+    "production": "psql -U postgres -f sql/products/products.sql && node server.js"
   },
   "keywords": [],
   "author": "",

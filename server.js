@@ -13,7 +13,7 @@ const express = require('express');
 const bycrypt = require('bcrypt')
 const es6Renderer = require('express-es6-template-engine');
 const cookieParser = require("cookie-parser");
-const sessions = require("express-session");
+const sessions = require("cookie-session");
 
 
 const PORT = process.env.PORT || 5050;

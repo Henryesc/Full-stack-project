@@ -7,7 +7,8 @@
     "development": "nodemon server.js",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "production": "psql -U postgres -f ./sql/products/products.sql && node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-es6-template-engine": "^2.2.3",

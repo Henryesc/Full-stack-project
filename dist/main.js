@@ -40,7 +40,7 @@ if(button_checkout) {
 if(window.location.pathname === '/products'){
   const pageTurn = () => {
   
-      fetch(`http://localhost:8080/products/page/20`, {
+      fetch(`/products/page/20`, {
           method: 'GET',
           headers: {
               "Content-Type": "application/json",
